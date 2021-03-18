@@ -1,12 +1,237 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Ramg</title>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Dushi Alimentos
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
 </head>
-<body>
-    
+
+<body class="index-page sidebar-collapse">
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="index.html">
+          Dushi Alimentos </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Menú</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html" onclick="scrollToDownload()">
+              <i class="material-icons">shopping_cart</i> Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html" onclick="scrollToDownload()">
+              <i class="material-icons">contact_support</i> Contacto
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">
+              <i class="material-icons">account_circle</i> Ingresar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/Dushi-alimentos-844948895656913" target="_blank" data-original-title="¡Síguenos en Facebook!" rel="nofollow">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/dushialimentos/" target="_blank" data-original-title="¡Síguenos en Instagram!" rel="nofollow">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./assets/img/minis.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <img src="assets/img/logo2.png" style="width:450px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main main-raised">
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="col-md-8 mx-auto">
+          <br>
+          <h2>¿Qué hacemos?</h2>
+          <h4>En Dushi nos dedicamos a preparar el pan fresco y saludable que puedes consumir sin remordimiento, todo a base de ingredientes adecuados y de alta calidad, además del amor de nuestro grupo de trabajo quienes cuidan la preparación y los detalles de la receta Dushi.</h4>
+        </div>
+      </div>
+
+      <!-- <div id="images">
+        <br><br>
+        <div class="row">
+          <div class="col-sm-3">
+            <br><br><img src="./assets/img/mmaiz.jpg" alt="Rounded Image" class="rounded img-fluid">
+          </div>
+          <div class="col-sm-4 ml-auto">
+            <br><img src="./assets/img/vegan1.jpg" alt="Rounded Image" class="rounded img-fluid">
+          </div>
+          <div class="col-sm-3 ml-auto">
+            <br><br><img src="./assets/img/vegan2.jpg" alt="Rounded Image" class="rounded img-fluid">
+          </div>
+        </div>
+        <div class="row">
+        </div>
+      </div>-->
+
+      <div class="section" id="carousel" style="padding: 10px 0px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+              <!-- Carousel Card -->
+              <div class="card card-raised card-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="./assets/img/slide/croissantquinua.jpg" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">volunteer_activism</i>
+                          Croissant Quinua
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./assets/img/slide/minimaizcacao.jpg" alt="Second slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">volunteer_activism</i>
+                          Mini Hamburguesa Cacao
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="./assets/img/slide/tajadoquinuadiabetico.jpg" alt="Third slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h4>
+                          <i class="material-icons">volunteer_activism</i>
+                          Tajado Quinua Diabéticos
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <!-- End Carousel Card -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sharing-area text-center">
+        <div class="row justify-content-center">
+          <h3>¡Gracias por tu apoyo!</h3>
+        </div>
+        <a id="facebook" class="btn btn-raised btn-facebook" href="https://www.facebook.com/Dushi-alimentos-844948895656913" rel="nofollow">
+          <i class="fa fa-facebook-square"></i>
+          Facebook
+        </a>
+        <a id="instagram" class="btn btn-raised btn-instagram" href="https://www.instagram.com/dushialimentos/" rel="nofollow">
+          <i class="fa fa-instagram"></i>
+          Instagram
+        </a>
+        <a id="github" href="https://api.whatsapp.com/send?phone=573218116079" target="_blank" class="btn btn-raised btn-success" rel="nofollow">
+          <i class="fa fa-whatsapp"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="#">
+              ALIMENTOS DUSHI
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      //init DateTimePickers
+      materialKit.initFormExtendedDatetimepickers();
+
+      // Sliders Init
+      materialKit.initSliders();
+    });
+
+
+    function scrollToDownload() {
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+
 </body>
+
 </html>
